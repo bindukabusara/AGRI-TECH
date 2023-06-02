@@ -63,7 +63,7 @@ span{
 .navlist ul li:hover:after {
     transform: scaleX(1);
 }
- .container h1 {
+.container h1 {
     font-family: 'Bree Serif', serif;
     margin-bottom: 50px;
     word-spacing: 50px;
