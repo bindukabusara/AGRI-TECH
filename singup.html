@@ -8,7 +8,7 @@
     <title> LOG IN </title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="sign.css">
 
     <!-- Boxicons css-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -22,14 +22,14 @@
                 <h2>Sign Up</h2><br>
                 <p>Hey, Enter your details</p>
 
-                <form action="#">
+                <form action="#" id="userForm" onsubmit="redirectToPage(event)">
                     <div class="field input-field">
                         <input type="text" placeholder="Name" class="input">
                     </div>
 
                     <div class="field input-field">
                         <input type="text" placeholder="Phone Number" class="input">
-                    </div><br>
+                    </div>
 
                   <!--  <div class="field input-field">
 
@@ -42,6 +42,18 @@
                         <input type="password" placeholder="Password" class="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>-->
+                    <div class="field input-field">
+                        <label for="userType"></label>
+                        <select class="selectProduct" id="userType" name="userType" required>
+                            <option value="" selected="selected">-- Please select --</option>
+
+                            <option value="farmer">Farmer</option>
+                            <option value="seller">whole seller</option>
+
+
+                        </select>
+
+                    </div><br>
 
                     <div class="field button-field">
                         <button><strong>Sing up</strong></button>
@@ -58,6 +70,21 @@
     </section>
 
     <!-- Javascript -->
+
+<script>
+    function redirectToPage(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const userTypeSelect = document.getElementById('userType');
+        const selectedOption = userTypeSelect.value;
+
+        if (selectedOption === 'farmer') {
+            window.location.href = 'farmer.html'; // Redirect to farmer page
+        } else if (selectedOption === 'seller') {
+            window.location.href = 'order.html'; // Redirect to seller page
+        }
+    }
+</script>
     <script src="script.js"></script>
 </body>
 
