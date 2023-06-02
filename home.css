@@ -105,6 +105,7 @@ span {
 .container p {
     margin-bottom: 30px;
     letter-spacing: 2px;
+    color:#fff;
 }
 
 .container {
@@ -117,5 +118,36 @@ span {
     background-size: cover;
     background-position: center;
 }
+button {
+    color: rgb(255, 255, 255);
+    background-color: #ffffff;
 
+}
+
+button:hover {
+    background-color: #E98A15;
+}
+.field input,
+.field button {
+    height: 100%;
+    width: 10%;
+    border: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.form a:hover {
+    text-decoration: underline;
+    color: #E98A15;
 
