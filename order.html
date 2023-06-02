@@ -35,6 +35,8 @@
                             <option value="beans">Beans</option>
                             <option value="rice">Rice</option>
                             <option value="wheat">Wheat</option>
+                            <option value="maize">Maize</option>
+                            <option value="peas">Peas</option>
 
                         </select>
 
@@ -54,10 +56,6 @@
                         <button><strong>Complete Order</strong></button>
                     </div><br>
 
-                    <div class="form-link">
-                        <span> Don't have an account? <a href="singup.html" class=" signup-link">Sign up</a></span>
-                        <link href="#">
-                    </div>
 
                 </form>
             </div>
@@ -89,6 +87,10 @@
                 unitCost = 4000; // Sample unit cost for rice in shillings
             } else if (selectedProduct === 'wheat') {
                 unitCost = 3800; // Sample unit cost for wheat in shillings
+             } else if (selectedProduct === 'maize') {
+                unitCost = 2000; // Sample unit cost for wheat in shillings
+             } else if (selectedProduct === 'peas') {
+                unitCost = 2500; // Sample unit cost for wheat in shillings
             } else {
                 unitCost = 0; // If no product is selected, set the unit cost to 0
             }
