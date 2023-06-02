@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOG IN </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="order.css">
+
+    <!-- Boxicons css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--<h2> <CENTER>WORK SHOP PROJECT</CENTER> </h2>-->
+
+    <section class="container forms">
+        <h1>Agri<span>Trans</span></h1>
+        <div class="form login">
+            <div class="form-content">
+
+                <h2>Order</h2><br>
+                <p>Please specify the product you want to sell
+                </p><br>
+
+                <form action="#">
+
+                    <div class="field input-field">
+                        <label for="product">Product<span>*</span></label>
+                        <select class="selectProduct" id="product" name="product" required>
+                            <option value="">-- Please select a product --</option>
+
+                            <option value="beans">Beans</option>
+                            <option value="rice">Rice</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="maize">Maize</option>
+                            <option value="peas">Peas</option>
+
+                        </select>
+
+                    </div>
+                    <div class="field input-field">
+                        <label for="quantity">Quantity (KG)<span>*</span></label>
+                        <input type="number" placeholder="" class="input"  required
+                            id="quantity" name="quantity">
+                    </div>
+                    <div class="field input-field">
+                        <label>Unit Cost (SHS)</label>
+                        <input type="number" placeholder="" class="input" id="totalCost" name="totalCost" disabled>
+                    </div><br><br><br>
+
+
+
+                    <div class="field button-field">
+                        <button><strong>Submit Resquest</strong></button>
+                    </div><br>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+
+</body>
+
+</html>
