@@ -9,13 +9,32 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="Uganda Christian University.css">
 
     <!-- Boxicons css-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!--<h2> <CENTER>WORK SHOP PROJECT</CENTER> </h2>-->
+
+    <nav class="navlist">
+
+        <div class="sub">
+
+
+            <ul>
+                <li>
+                    <h1>Agri<span>Trans</span></h1>
+                </li>
+                <li><a><b>Home</b></a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+
+    </nav><br>
+    <hr><br>
+
 
     <section class="container forms">
         <h1>Agri<span>Trans</span></h1>
@@ -28,7 +47,7 @@
                 <form action="#">
 
                     <div class="field input-field">
-                        <label for="product">Product<span>*</span></label>
+                        <label for="product">Product<span class="required"></span></label>
                         <select class="selectProduct" id="product" name="product" required>
                             <option value="">-- Please select a product --</option>
 
@@ -42,7 +61,7 @@
 
                     </div>
                     <div class="field input-field">
-                        <label for="quantity">Quantity (KG)<span>*</span></label>
+                        <label for="quantity">Quantity (KG)<span class="required"></span></label>
                         <input type="number" placeholder="50-200" class="input" min="50" max="200" value="50" required  id="quantity" name="quantity">
                     </div>
                     <div class="field input-field">

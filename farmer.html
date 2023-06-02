@@ -9,27 +9,45 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="Uganda Christian University.css">
 
     <!-- Boxicons css-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!--<h2> <CENTER>WORK SHOP PROJECT</CENTER> </h2>-->
+
+    <nav class="navlist">
+
+        <div class="sub">
+
+
+            <ul>
+                <li>
+                    <h1>Agri<span>Trans</span></h1>
+                </li>
+                <li><a><b>Home</b></a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+
+    </nav><br>
+    <hr><br>
 
     <section class="container forms">
         <h1>Agri<span>Trans</span></h1>
         <div class="form login">
             <div class="form-content">
 
-                <h2>Order</h2><br>
+
                 <p>Please specify the product you want to sell
                 </p><br>
 
                 <form action="#">
 
                     <div class="field input-field">
-                        <label for="product">Product<span>*</span></label>
+                        <label for="product">Product<span class="required"></span></label>
                         <select class="selectProduct" id="product" name="product" required>
                             <option value="">-- Please select a product --</option>
 
@@ -43,13 +61,13 @@
 
                     </div>
                     <div class="field input-field">
-                        <label for="quantity">Quantity (KG)<span>*</span></label>
+                        <label for="quantity">Quantity (KG)<span class="required"></span></label>
                         <input type="number" placeholder="" class="input"  required
                             id="quantity" name="quantity">
                     </div>
                     <div class="field input-field">
                         <label>Unit Cost (SHS)</label>
-                        <input type="number" placeholder="" class="input" id="totalCost" name="totalCost" disabled>
+                        <input type="number" placeholder="Unit Cost" class="input" id="totalCost" name="UnitCost">
                     </div><br><br><br>
 
 

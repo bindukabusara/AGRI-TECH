@@ -8,15 +8,30 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="Uganda Christian University.css">
 
         <!-- Boxicons css-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <!--<h2> <CENTER>WORK SHOP PROJECT</CENTER> </h2>-->
+        <nav class="navlist">
+
+            <div class="sub">
+
+
+                <ul>
+                    <li><h1>Agri<span>Trans</span></h1></li>
+                    <li><a><b>Home</b></a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+
+        </nav><br><hr><br>
+
 
         <section class="container forms">
-            <h1>Agri<span>Trans</span></h1>
+
             <div class="form login">
                 <div class="form-content">
 
@@ -26,8 +41,9 @@
                     <form action="#">
 
                         <div class="field input-field">
-                            <input type="text" placeholder="Phone Number" class="input">
-                        </div>
+                            <label for="phone">Phone Number<span class="required"></span></label>
+                            <input type="text" placeholder="Phone Number" class="input" required >
+                        </div><br>
 
                        <!-- <div class="field input-field">
                             <input type="password" placeholder="Password" class="password">
