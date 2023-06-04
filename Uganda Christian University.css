@@ -26,8 +26,9 @@
 
 }
 .navlist ul {
-    display: flex;
+    display:flex;
     list-style: none;
+
 }
 
 .navlist ul li:first-child {
@@ -80,7 +81,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2E6140;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
