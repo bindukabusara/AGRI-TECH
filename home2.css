@@ -95,3 +95,9 @@ span {
     background-size: cover;
     background-position: center;
 }
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
