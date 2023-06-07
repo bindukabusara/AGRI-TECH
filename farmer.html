@@ -69,7 +69,7 @@
 
 
                     <div class="field button-field">
-                        <button><strong><a href="info.html">Submit Resquest</a></strong></button>
+                        <button id="submitRequestBtn"><strong><a href="info.html">Submit Resquest</a></strong></button>
                     </div><br>
 
 
@@ -90,6 +90,37 @@
             welcomeMessage.textContent = `hey, ${name}! we can help you to sell your product \t Please specify the product you want to sell`;
         };
     </script>
+    <!--<script>
+        window.onload = function () {
+            // Get the name from the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+
+            // Update the welcome message
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            welcomeMessage.textContent = `Hey, ${name}! We can help you sell your product. Please specify the product you want to sell.`;
+
+            // Get the form elements
+            const productSelect = document.getElementById('product');
+            const quantityInput = document.getElementById('quantity');
+            const costInput = document.getElementById('totalCost');
+            const submitRequestBtn = document.getElementById('submitRequestBtn');
+
+            // Add click event listener to the submitRequestBtn
+            submitRequestBtn.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get the selected product, quantity, and cost
+                const product = productSelect.value;
+                const quantity = quantityInput.value;
+                const cost = costInput.value;
+
+                // Display the pop-up with the selected values
+                alert(`Product: ${product}\nQuantity: ${quantity} KG\nCost per KG: ${cost} SHS`);
+            });
+        };
+    </script>-->
+
 
 </body>
 
