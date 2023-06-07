@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LOG IN </title>
+    <title>LOG IN</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="info.css">
-    <link rel="stylesheet" href="info2.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="Uganda Christian University.css">
 
 </head>
 
 <body>
+
     <nav class="navlist">
-
         <div class="sub">
-
-
             <ul>
                 <li>
                     <h1>Agri<span>Trans</span></h1>
@@ -28,27 +26,39 @@
                 <li><a href="">About Us</a></li>
             </ul>
         </div>
+    </nav><br>
+    <hr><br>
 
-    </nav>
+    <section class="container forms">
+        <h1>Agri<span>Trans</span></h1>
+        <div class="form login">
+            <div class="form-content">
+                <h2>DETAILS ABOUT PRODUCT</h2><br>
+                <p id="welcomeMessage"></p><br>
 
+                <div id="productDetails"></div>
 
-    <section class="container"><br>
-        <hr><br><br><br><br><br><br><br><br><br><br>
-        <h1>
-           DETAILS ABOUT PRODUCT
-        </h1>
-        <a>Hey, you want to sell 100 Kg of Rice and expect to be paid on 15th june 23</a><br>
-        <br><br><br>
-        <div class="field button-field">
-            <center><button><strong style="color: rgb(0, 0, 0);"></strong></button>
-            </center>
-        </div>
-        <div class="form-link">
-            <span> Don't have an account? <a href="singup.html" class=" signup-link"><strong
-                        style="color: #A7F500;">Sign up</strong></a></span>
-            <link href="#">
+            </div>
         </div>
     </section>
+
+    <!-- JavaScript -->
+    <script>
+        window.onload = function () {
+            // Get the query parameters from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const product = urlParams.get('product');
+            const quantity = urlParams.get('quantity');
+            const cost = urlParams.get('cost');
+
+            // Update the welcome message
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            welcomeMessage.textContent = `Hey, ${name}! you want to sell ${quantity} KG of ${product} to the unit cost of ${cost} SHS and expect your payment to be in the range  of `;
+
+
+        };
+    </script>
 
 </body>
 
