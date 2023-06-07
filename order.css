@@ -131,14 +131,14 @@ span{
 }
 
 .form a {
-    color: rgb(0, 157, 84);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 15px;
 }
 
 .form a:hover {
     text-decoration: underline;
-    color: #E98A15;
+    color: #ffffff;
 }
 
 button {
