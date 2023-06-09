@@ -42,7 +42,7 @@
                 <h2>Order</h2><br>
                 <p>Hey, Do you want to order for grains (beans, Rice,Wheat,...) and get them delivered to yout market?</p><br>
 
-                <form action="#">
+                <form id="requestForm" action="info2.html">
 
                     <div class="field input-field">
                         <label for="product">Product<span class="required"></span></label>
@@ -63,14 +63,16 @@
                         <input type="number" placeholder="50-200" class="input" min="50" max="200" value="50" required  id="quantity" name="quantity">
                     </div>
                     <div class="field input-field">
-                        <label>Total Cost (SHS)</label>
-                        <input type="number" placeholder="" class="input" id="totalCost" name="totalCost" disabled>
+                        <label for="cost">Total Cost (SHS)</label>
+                        <input type="number" placeholder="" class="input" id="Cost" name="totalCost" disabled>
                     </div><br><br><br>
 
 
 
                     <div class="field button-field">
-                        <button><strong>Complete Order</strong></button>
+                        <!-- Update the button to include the necessary query parameters -->
+                        <button><a href="info2.html?product=<product>&quantity=<quantity>&cost=<totalCost>"><strong>Complete
+                                    Order</strong></a></button>
                     </div><br>
 
 
@@ -116,13 +118,6 @@
             const totalCost = unitCost * quantity;
             totalCostInput.value = isNaN(totalCost) ? '' : totalCost.toFixed(2);
         }
-
-        // Get the name from the URL query parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const name = urlParams.get('name');
-
-            // Use the name as needed
-            console.log(name); // Output the name to the console (you can modify this to display it on the page)
 
     </script>
 

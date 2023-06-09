@@ -54,14 +54,13 @@
         window.onload = function () {
             // Get the query parameters from the URL
             const urlParams = new URLSearchParams(window.location.search);
-            const name = urlParams.get('name');
             const product = urlParams.get('product');
             const quantity = urlParams.get('quantity');
             const cost = urlParams.get('cost');
 
             // Update the welcome message
-            const welcomeMessage = document.getElementById('welcomeMessage');
-            welcomeMessage.textContent = `Hey, ${name}! you want to sell ${quantity} KG of ${product} to the unit cost of ${cost} SHS and expect your payment in few days `;
+            const productDetails = document.getElementById('productDetails');
+            productDetails.innerHTML = `Hey, ${name}! you ordered ${quantity} KG of ${product} to the total cost of ${cost} SHS`;
         };
     </script>
 
