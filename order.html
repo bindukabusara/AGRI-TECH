@@ -116,6 +116,14 @@
             const totalCost = unitCost * quantity;
             totalCostInput.value = isNaN(totalCost) ? '' : totalCost.toFixed(2);
         }
+
+        // Get the name from the URL query parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+
+            // Use the name as needed
+            console.log(name); // Output the name to the console (you can modify this to display it on the page)
+
     </script>
 
 </body>
