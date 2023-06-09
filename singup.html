@@ -8,6 +8,43 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="sign.css">
     <link rel="stylesheet" href="Uganda Christian University.css">
+
+    <style>
+        /* Responsive styles */
+        /* Small screens */
+        @media screen and (max-width: 576px) {
+            .navlist ul {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .navlist ul li {
+                margin-bottom: 2px;
+            }
+
+            .container.forms {
+                width: 10%;
+                max-width: 200px;
+                margin: 0 auto;
+                background-color: #fff;
+            }
+        }
+
+        /* Medium screens */
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .navlist ul {
+                justify-content: center;
+            }
+        }
+
+        /* Large screens */
+        @media screen and (min-width: 993px) {
+            .navlist ul {
+                justify-content: flex-end;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +59,7 @@
                 <li><a href="">About Us</a></li>
             </ul>
         </div>
-    </nav><br>
-    <hr><br>
+    </nav>
     <section class="container forms">
         <div class="form login">
             <div class="form-content">
