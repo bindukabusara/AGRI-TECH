@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color:  #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,7 +27,7 @@
     width: 100%;
     padding: 30px;
     border-radius: 10px;
-    background: #cccccc;
+    background:#ffffff;
 
 }
 
@@ -83,7 +83,7 @@ form .field {
     height: 100%;
     width: 100%;
     border: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     border-radius: 10px;
 }
