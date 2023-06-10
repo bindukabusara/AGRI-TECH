@@ -101,7 +101,7 @@
                     </div>
                     <div class="field input-field">
                         <label>Total Cost (SHS)</label>
-                        <input type="number" placeholder="" class="input" id="totalCost" name="totalCost" disabled>
+                        <input type="number" placeholder="" class="input" id="totalCost" name="totalCost" readonly>
                     </div><br><br><br>
 
 
@@ -151,7 +151,8 @@
 
             // Perform the multiplication and update the total cost field
             const totalCost = unitCost * quantity;
-            totalCostInput.value = isNaN(totalCost) ? '' : totalCost.toFixed(2);
+
+            totalCostInput.value = isNaN(totalCost) ? '' : totalCost.toFixed(1);
         }
 
     </script>
